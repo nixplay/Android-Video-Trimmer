@@ -1,1 +1,3 @@
 include ':app'
+include ':android-video-trimmer'
+project(':android-video-trimmer').projectDir = new File('android-video-trimmer')
