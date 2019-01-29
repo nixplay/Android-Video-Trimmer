@@ -5,4 +5,6 @@
     <string name="compressing">正在压缩视频...</string>
     <string name="compressed_done">视频压缩完成！</string>
     <string name="video_shoot_tip">拖动选择你要发表的%d秒以内片段！</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
 </resources>
