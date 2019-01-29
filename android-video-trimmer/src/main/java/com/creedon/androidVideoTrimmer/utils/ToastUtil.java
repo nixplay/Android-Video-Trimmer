@@ -12,22 +12,37 @@ import android.widget.Toast;
  * description:
  */
 public class ToastUtil {
-  public static void show(final Context context,final CharSequence text) {
-    if (context == null || TextUtils.isEmpty(text)) {
-      return;
-    }
-    UIThreadUtil.runOnUiThread(() -> Toast.makeText(context, text, Toast.LENGTH_SHORT).show());
-  }
+	public static void show(final Context context, final CharSequence text) {
+		if (context == null || TextUtils.isEmpty(text)) {
+			return;
+		}
+		UIThreadUtil.runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
+			}
+		});
+	}
 
-  public static void show(final Context context, final int resId) {
-    if (context == null) return;
-    UIThreadUtil.runOnUiThread(() -> Toast.makeText(context, resId, Toast.LENGTH_SHORT).show());
-  }
+	public static void show(final Context context, final int resId) {
+		if (context == null) return;
+		UIThreadUtil.runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				Toast.makeText(context, resId, Toast.LENGTH_SHORT).show();
+			}
+		});
+	}
 
-  public static void longShow(final Context context,final CharSequence text) {
-    if (context == null || TextUtils.isEmpty(text)) {
-      return;
-    }
-    UIThreadUtil.runOnUiThread(() -> Toast.makeText(context, text, Toast.LENGTH_LONG).show());
-  }
+	public static void longShow(final Context context, final CharSequence text) {
+		if (context == null || TextUtils.isEmpty(text)) {
+			return;
+		}
+		UIThreadUtil.runOnUiThread(new Runnable() {
+			@Override
+			public void run() {
+				Toast.makeText(context, text, Toast.LENGTH_LONG).show();
+			}
+		});
+	}
 }
