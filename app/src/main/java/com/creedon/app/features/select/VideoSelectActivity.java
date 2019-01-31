@@ -18,12 +18,7 @@ import iknow.android.utils.callback.SimpleCallback;
 import iknow.android.utils.callback.SingleCallback;
 import io.reactivex.functions.Consumer;
 
-/**
- * Author：J.Chou
- * Date：  2016.08.01 2:23 PM
- * Email： who_know_me@163.com
- * Describe:
- */
+
 public class VideoSelectActivity extends AppCompatActivity implements View.OnClickListener {
 
 	private VideoSelectLayoutBinding mBinding;

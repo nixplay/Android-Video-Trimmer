@@ -14,12 +14,6 @@ import com.creedon.androidVideoTrimmer.databinding.ActivityTrimmerLayoutBinding;
 import com.creedon.androidVideoTrimmer.interfaces.VideoTrimListener;
 import com.creedon.androidVideoTrimmer.utils.ToastUtil;
 
-/**
- * Author：J.Chou
- * Date：  2016.08.01 2:23 PM
- * Email： who_know_me@163.com
- * Describe:
- */
 public class VideoTrimmerActivity extends AppCompatActivity implements VideoTrimListener {
 
 	private static final String TAG = "jason";

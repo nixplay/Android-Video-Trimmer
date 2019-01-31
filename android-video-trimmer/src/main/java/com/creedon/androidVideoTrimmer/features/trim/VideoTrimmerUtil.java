@@ -5,23 +5,20 @@ import android.graphics.Bitmap;
 import android.media.MediaMetadataRetriever;
 import android.net.Uri;
 import android.text.TextUtils;
+
 import com.creedon.androidVideoTrimmer.interfaces.VideoTrimListener;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 import iknow.android.utils.DeviceUtil;
 import iknow.android.utils.UnitConverter;
 import iknow.android.utils.callback.SingleCallback;
 import iknow.android.utils.thread.BackgroundExecutor;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.Locale;
 import nl.bravobit.ffmpeg.ExecuteBinaryResponseHandler;
 import nl.bravobit.ffmpeg.FFmpeg;
 
-/**
- * Author：J.Chou
- * Date：  2016.08.01 2:23 PM
- * Email： who_know_me@163.com
- * Describe:
- */
 public class VideoTrimmerUtil {
 
   private static final String TAG = VideoTrimmerUtil.class.getSimpleName();
